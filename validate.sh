@@ -14,4 +14,4 @@ set -xe # Fail on first error
 # Search for all XML files in the current directory
 REPOSITORY_DIR="."
 
-/usr/bin/xmllint --noout --valid `find $REPOSITORY_DIR -name \*.xml`
+/usr/bin/xmllint --noout `find $REPOSITORY_DIR -name \*.xml`
