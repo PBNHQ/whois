@@ -116,7 +116,12 @@
         <whois-service address="whois.nic.br" />
         <test expected-result="unavailable">nic.br</test>
         <test expected-result="available">blabla123google.br</test>
-    </tld>            
+    </tld>
+    <tld name=".com.br">
+        <whois-service address="whois.nic.br" />
+        <test expected-result="unavailable">nic.br</test>
+        <test expected-result="available">blabla123google.br</test>
+    </tld>      
     <tld name=".bz">
         <whois-service address="whois.afilias-grs.info" />
         <test expected-result="unavailable">google.bz</test>
