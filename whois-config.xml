@@ -31,6 +31,8 @@
     <unavailable>gov.co</unavailable>
     <unavailable>mil.co</unavailable>
     <unavailable>org.co</unavailable>
+    <unavailable>gm.tv</unavailable>
+    <unavailable>leg.br</unavailable>
     <!-- unavailable [BEGIN] -->
     
     <!-- gTLD [BEGIN] -->
@@ -655,6 +657,7 @@
     <pattern type="quota-exceeded" mode="string">excessive querying</pattern>
     <pattern type="quota-exceeded" mode="string">you have reached configured rate limit</pattern>
 
+    <pattern type="unavailable" mode="string">this domain cannot be registered</pattern>
     <pattern type="unavailable" mode="string">registered until cancelled</pattern>
     <pattern type="unavailable" mode="string">not available</pattern>
     <pattern type="unavailable" mode="string">registered until expiry date</pattern>
