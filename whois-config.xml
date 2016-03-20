@@ -473,6 +473,7 @@
     </tld>            
     <tld name=".sh">
         <whois-service address="whois.nic.sh" />
+        <registrator>http://nic.sh/cgi-bin/whois?query=%DOMAINNAME%</registrator> 
         <test expected-result="unavailable">google.sh</test>
         <test expected-result="available">blabla123google.sh</test>
     </tld>            
