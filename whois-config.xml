@@ -90,6 +90,7 @@
         <whois-service address="whois.nic.am">
             <pattern type="available" mode="string">no match</pattern>
         </whois-service>
+        <registrator>https://www.eurodns.com/das/search?domain=%DOMAINNAME%</registrator> 
         <test expected-result="unavailable">google.am</test>
         <test expected-result="available">blabla123google.am</test>
     </tld>
@@ -103,6 +104,7 @@
             <pattern type="available" mode="string">% nothing found</pattern>
             <pattern type="quota-exceeded" mode="string">% quota exceeded</pattern>
         </whois-service>
+        <registrator>https://www.eurodns.com/das/search?domain=%DOMAINNAME%</registrator>
         <test expected-result="unavailable">google.at</test>
         <test expected-result="available">blabla123google.at</test>
     </tld>            
@@ -111,6 +113,7 @@
             <pattern type="quota-exceeded" mode="string">ip address blocked</pattern>
             <pattern type="quota-exceeded" mode="string">excessive querying</pattern>
         </whois-service>
+        <registrator>https://www.eurodns.com/das/search?domain=%DOMAINNAME%</registrator>
         <test expected-result="unavailable">proximus.be</test>
         <test expected-result="available">blabla123google.be</test>
     </tld>            
@@ -190,6 +193,7 @@
         <whois-service address="whois.nic.uk">
             <pattern type="quota-exceeded" mode="string">the whois query quota for</pattern>
         </whois-service>
+        <registrator>https://www.eurodns.com/das/search?domain=%DOMAINNAME%</registrator>
         <test expected-result="unavailable">google.co.uk</test>
         <test expected-result="available">blabla123google.co.uk</test>
     </tld>            
@@ -212,6 +216,7 @@
         <whois-service address="whois.nic.cz">
             <pattern type="quota-exceeded" mode="string">your connection limit exceeded.</pattern>
         </whois-service>
+        <registrator>https://www.eurodns.com/das/search?domain=%DOMAINNAME%</registrator>
         <test expected-result="unavailable">google.cz</test>
         <test expected-result="available">blabla123google.cz</test>
     </tld>            
@@ -221,37 +226,44 @@
         </whois-service>
         <!-- NOT WORKS whois-service address="whois.antagus.de" /-->
         <!-- LOCAL REGISTRY whois-service address="whois.your-server.de" /-->
+        <registrator>https://www.eurodns.com/das/search?domain=%DOMAINNAME%</registrator>
         <test expected-result="unavailable">google.de</test>
         <test expected-result="available">blabla123google.de</test>
     </tld>            
     <tld name=".dk">
         <whois-service address="whois.dk-hostmaster.dk" />
+        <registrator>https://www.eurodns.com/das/search?domain=%DOMAINNAME%</registrator>
         <test expected-result="unavailable">google.dk</test>
         <test expected-result="available">blabla123google.dk</test>
     </tld>            
     <tld name=".es">
         <whois-service address="whois.nic.es" />
+        <registrator>https://www.eurodns.com/das/search?domain=%DOMAINNAME%</registrator>
         <test expected-result="unavailable">google.es</test>
         <test expected-result="available">blabla123google.es</test>
     </tld>            
     <tld name=".eu">
         <whois-service address="whois.eu" />
+        <registrator>https://www.eurodns.com/das/search?domain=%DOMAINNAME%</registrator>
         <test expected-result="unavailable">google.eu</test>
         <test expected-result="available">blabla123google.eu</test>
     </tld>            
     <tld name=".eu.com">
         <whois-service address="whois.centralnic.com" />
+        <registrator>https://www.eurodns.com/das/search?domain=%DOMAINNAME%</registrator>
         <test expected-result="unavailable">google.eu.com</test>
         <test expected-result="available">blabla123google.eu.com</test>
         
     </tld>            
     <tld name=".fi">
         <whois-service address="whois.ficora.fi" />
+        <registrator>https://www.eurodns.com/das/search?domain=%DOMAINNAME%</registrator>
         <test expected-result="unavailable">google.fi</test>
         <test expected-result="available">blabla123google.fi</test>
     </tld>            
     <tld name=".fr">
         <whois-service address="whois.nic.fr" />
+        <registrator>https://www.eurodns.com/das/search?domain=%DOMAINNAME%</registrator>
         <test expected-result="unavailable">google.fr</test>
         <test expected-result="available">blabla123google.fr</test>
     </tld>            
@@ -274,6 +286,7 @@
 -->    
     <tld name=".hr">
         <whois-service address="registrar.carnet.hr" />
+        <registrator>https://www.eurodns.com/das/search?domain=%DOMAINNAME%</registrator>
         <test expected-result="unavailable">google.hr</test>
         <test expected-result="available">blabla123google.hr</test>
     </tld>            
@@ -281,6 +294,7 @@
         <whois-service address="whois.domainregistry.ie">
             <pattern type="available" mode="string">is not a registered .ie domain name</pattern>
         </whois-service>
+        <registrator>https://www.eurodns.com/das/search?domain=%DOMAINNAME%</registrator>
         <test expected-result="unavailable">google.ie</test>
         <test expected-result="available">blabla123google.ie</test>
     </tld>            
@@ -295,6 +309,7 @@
 -->    
     <tld name=".im">
         <whois-service address="whois.nic.im" />
+        <registrator>https://www.eurodns.com/das/search?domain=%DOMAINNAME%</registrator>
         <test expected-result="unavailable">google.im</test>
         <test expected-result="available">blabla123google.im</test>
     </tld>            
@@ -310,6 +325,7 @@
     </tld>            
     <tld name=".is">
         <whois-service address="whois.isnic.is" />
+        <registrator>https://www.eurodns.com/das/search?domain=%DOMAINNAME%</registrator>
         <test expected-result="unavailable">google.is</test>
         <test expected-result="available">blabla123google.is</test>
     </tld>            
@@ -319,6 +335,7 @@
             <pattern type="unavailable" mode="string">status:             ok</pattern>
             <pattern type="unavailable" mode="string">status:             unassignable</pattern>
         </whois-service>
+        <registrator>https://www.eurodns.com/das/search?domain=%DOMAINNAME%</registrator>
         <test expected-result="unavailable">google.it</test>
         <test expected-result="available">blabla123google.it</test>
     </tld>            
@@ -351,6 +368,7 @@
         <whois-service address="whois.nic.li">
             <pattern type="available" mode="string">we do not have an entry in our database matching your query.</pattern>
         </whois-service>
+        <registrator>https://www.eurodns.com/das/search?domain=%DOMAINNAME%</registrator>
         <test expected-result="unavailable">google.li</test>
         <test expected-result="available">blabla123google.li</test>
     </tld>            
@@ -358,6 +376,7 @@
         <whois-service address="whois.dns.lu">
             <pattern type="quota-exceeded" mode="string">%% maximum query rate reached</pattern>
         </whois-service>
+        <registrator>https://www.eurodns.com/das/search?domain=%DOMAINNAME%</registrator>
         <test expected-result="unavailable">google.lu</test>
         <test expected-result="available">blabla123google.lu</test>
     </tld>            
@@ -368,6 +387,7 @@
     </tld>            
     <tld name=".me">
         <whois-service address="whois.nic.me" />
+        <registrator>https://www.eurodns.com/das/search?domain=%DOMAINNAME%</registrator>
         <test expected-result="unavailable">google.me</test>
         <test expected-result="available">blabla123google.me</test>
     </tld>            
@@ -385,6 +405,7 @@
     </tld>            
     <tld name=".tf">
         <whois-service address="whois.nic.tf" />
+        <registrator>https://www.eurodns.com/das/search?domain=%DOMAINNAME%</registrator>
         <test expected-result="unavailable">google.tf</test>
         <test expected-result="available">blabla123google.tf</test>
     </tld>            
@@ -405,13 +426,14 @@
         <test expected-result="unavailable">google.my</test>
         <test expected-result="available">blabla123google.my</test>
     </tld>            
-<tld name=".nl">
+    <tld name=".nl">
         <whois-service address="whois.domain-registry.nl">
             <pattern type="available" mode="string">is free</pattern>
             <pattern type="unavailable" mode="string">status:      active</pattern>
             <pattern type="quota-exceeded" mode="string">maximum number of requests per second exceeded</pattern>
             <pattern type="quota-exceeded" mode="string">server too busy</pattern>
         </whois-service>
+        <registrator>https://www.eurodns.com/das/search?domain=%DOMAINNAME%</registrator>
         <test expected-result="unavailable">google.nl</test>
         <test expected-result="available">blabla123google.nl</test>
     </tld>                        
@@ -419,6 +441,7 @@
         <whois-service address="whois.norid.no">
             <pattern type="available" mode="string">% no match</pattern>
         </whois-service>
+        <registrator>https://www.eurodns.com/das/search?domain=%DOMAINNAME%</registrator>
         <test expected-result="unavailable">google.no</test>
         <test expected-result="available">blabla123google.no</test>
     </tld>            
@@ -432,16 +455,19 @@
             <pattern type="unavailable" mode="string">nameservers:</pattern>
             <pattern type="quota-exceeded" mode="string">previous request is being processed for</pattern>
         </whois-service>
+        <registrator>https://www.eurodns.com/das/search?domain=%DOMAINNAME%</registrator>
         <test expected-result="unavailable">google.pl</test>
         <test expected-result="available">blabla123google.pl</test>
     </tld>            
     <tld name=".pt">
         <whois-service address="whois.dns.pt" />
+        <registrator>https://www.eurodns.com/das/search?domain=%DOMAINNAME%</registrator>
         <test expected-result="unavailable">google.pt</test>
         <test expected-result="available">blabla123google.pt</test>
     </tld>            
     <tld name=".ro">
         <whois-service address="whois.rotld.ro" />
+        <registrator>https://www.eurodns.com/das/search?domain=%DOMAINNAME%</registrator>
         <test expected-result="unavailable">google.ro</test>
         <test expected-result="available">blabla123google.ro</test>
     </tld>
@@ -461,6 +487,7 @@
             <pattern type="unavailable" mode="string">state:            active</pattern>
             <pattern type="available" mode="string">" not found.</pattern>
         </whois-service>
+        <registrator>https://www.eurodns.com/das/search?domain=%DOMAINNAME%</registrator>
         <test expected-result="unavailable">google.se</test>
         <test expected-result="available">blabla123google.se</test>
     </tld>            
@@ -479,6 +506,7 @@
     </tld>            
     <tld name=".si">
         <whois-service address="whois.arnes.si" />
+        <registrator>https://www.eurodns.com/das/search?domain=%DOMAINNAME%</registrator>
         <test expected-result="unavailable">google.si</test>
         <test expected-result="available">blabla123google.si</test>
     </tld>           
@@ -536,6 +564,7 @@
         <whois-service address="whois.ua">
             <pattern type="unavailable" mode="string">domain:</pattern>
         </whois-service>
+        <registrator>https://www.eurodns.com/das/search?domain=%DOMAINNAME%</registrator>
         <test expected-result="unavailable">google.ua</test>
         <test expected-result="available">blabla123google.ua</test>
     </tld>            
@@ -558,6 +587,7 @@
         <whois-service address="whois.nic.hu">
             <pattern type="unavailable" mode="string">record created:</pattern>
         </whois-service>
+        <registrator>https://www.eurodns.com/das/search?domain=%DOMAINNAME%</registrator>
         <test expected-result="unavailable">google.hu</test>
         <test expected-result="available">blabla123google.hu</test>
     </tld>            
@@ -565,6 +595,7 @@
         <whois-service address="whois.domreg.lt">
             <pattern type="quota-exceeded" mode="string">query limit</pattern>
         </whois-service>
+        <registrator>https://www.eurodns.com/das/search?domain=%DOMAINNAME%</registrator>
         <test expected-result="unavailable">google.lt</test>
         <test expected-result="available">blabla123google.lt</test>
     </tld>            
@@ -573,6 +604,7 @@
             <pattern type="available" mode="string">status: free</pattern>
             <pattern type="unavailable" mode="string">status: active</pattern>
         </whois-service>        
+        <registrator>https://www.eurodns.com/das/search?domain=%DOMAINNAME%</registrator>
         <!-- LOCAL REGISTRY whois-service address="whois.fiducia.lv" /-->
         <test expected-result="unavailable">nic.lv</test>
         <test expected-result="available">blabla123google.lv</test>
@@ -595,6 +627,7 @@
         <whois-service address="whois.cctld.by">
             <pattern type="available" mode="string">object does not exists</pattern>
         </whois-service>
+        <registrator>https://www.eurodns.com/das/search?domain=%DOMAINNAME%</registrator>
         <test expected-result="unavailable">google.by</test>
         <test expected-result="available">blabla123google.by</test>        
     </tld>            
@@ -607,6 +640,7 @@
     </tld>            
     <tld name=".ee">
         <whois-service address="whois.tld.ee" />
+        <registrator>https://www.eurodns.com/das/search?domain=%DOMAINNAME%</registrator>
         <test expected-result="unavailable">google.ee</test>
         <test expected-result="available">blabla123google.ee</test>        
     </tld>            
