@@ -497,7 +497,21 @@
         </whois-service>
         <test expected-result="unavailable">google.sg</test>
         <test expected-result="available">blabla123google.sg</test>
+    </tld>           
+    <tld name=".com.sg">
+        <whois-service address="whois.nic.net.sg">
+            <pattern type="unavailable" mode="string">this domain name is in the registry reserved list.</pattern>
+        </whois-service>
+        <test expected-result="unavailable">google.com.sg</test>
+        <test expected-result="available">blabla123google.com.sg</test>
     </tld>            
+    <tld name=".org.sg">
+        <whois-service address="whois.nic.net.sg">
+            <pattern type="unavailable" mode="string">this domain name is in the registry reserved list.</pattern>
+        </whois-service>
+        <test expected-result="unavailable">sbf.org.sg</test>
+        <test expected-result="available">blabla123google.org.sg</test>
+    </tld>     
     <tld name=".sh">
         <whois-service address="whois.nic.sh" />
         <registrator>http://nic.sh/cgi-bin/whois?query=%DOMAINNAME%</registrator> 
