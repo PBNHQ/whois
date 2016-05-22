@@ -237,7 +237,9 @@
         <test expected-result="available">blabla123google.dk</test>
     </tld>            
     <tld name=".es">
-        <whois-service address="whois.nic.es" />
+        <whois-service address="whois.nic.es">
+            <pattern type="quota-exceeded" mode="string">access will only be enabled for  ip addresses  authorised  by red.es.</pattern>
+        </whois-service>
         <registrator>https://www.eurodns.com/das/search?domain=%DOMAINNAME%</registrator>
         <test expected-result="unavailable">google.es</test>
         <test expected-result="available">blabla123google.es</test>
