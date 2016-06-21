@@ -236,7 +236,7 @@
         <test expected-result="unavailable">google.dk</test>
         <test expected-result="available">blabla123google.dk</test>
     </tld>   
-             
+    <!--         
     <tld name=".es">
         <whois-service address="whois.godaddy.com">
             <pattern type="quota-exceeded" mode="string">access will only be enabled for  ip addresses  authorised  by red.es.</pattern>
@@ -245,7 +245,7 @@
         <test expected-result="unavailable">google.es</test>
         <test expected-result="available">blabla123google.es</test>
     </tld>            
-   
+   -->
     <tld name=".eu">
         <whois-service address="whois.eu" />
         <registrator>https://www.eurodns.com/das/search?domain=%DOMAINNAME%</registrator>
