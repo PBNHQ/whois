@@ -238,7 +238,7 @@
     </tld>   
              
     <tld name=".es">
-        <whois-service address="whois.eurodns.com">
+        <whois-service address="whois.godaddy.com">
             <pattern type="quota-exceeded" mode="string">access will only be enabled for  ip addresses  authorised  by red.es.</pattern>
         </whois-service>
         <registrator>https://www.eurodns.com/das/search?domain=%DOMAINNAME%</registrator>
